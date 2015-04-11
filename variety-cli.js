@@ -1,5 +1,8 @@
 #! /usr/bin/env node
 
+/*jslint node: true */
+"use strict";
+
 var program = require('commander');
 var HJSON = require('hjson');
 var Q = require("q");
@@ -27,7 +30,7 @@ var verifyLocalLibrary = function(filename) {
       }
   });
   return deferred.promise;
-}
+};
 
 var jsVarDefinition = function(name, value) {
   if(typeof value === 'string') {
@@ -36,7 +39,7 @@ var jsVarDefinition = function(name, value) {
     value = JSON.stringify(value);
   }
   return 'var ' + name + '=' + value + ";";
-}
+};
 
 var buildParams = function(collection, program) {
   var varietyParams = program.opts();
@@ -50,7 +53,7 @@ var buildParams = function(collection, program) {
      return jsVarDefinition(key, varietyParams[key]);
     })
     .join('');
-}
+};
 
 var runAnalysis = function() {
   program._name = 'variety'; // hack, how to do it correctly?
@@ -74,7 +77,7 @@ var runAnalysis = function() {
 
   program.usage = function() {
     return "[options] db_name/collection_name";
-  }
+  };
   program.parse(process.argv);
 
   if (program.args.length != 1 || program.args[0].split("/").length != 2) {
@@ -89,7 +92,7 @@ var runAnalysis = function() {
     [database, '--eval='+buildParams(collection, program), 'variety.js'],
     {stdio:'inherit'}
   );
-}
+};
 
 var varietyPath = path.join(__dirname, "variety.js");
 verifyLocalLibrary(varietyPath)
