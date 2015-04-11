@@ -1,0 +1,8 @@
+# intellij idea project files
+.idea/
+
+# variety.js should not be part of the repository, will be downloaded automatically
+variety.js
+
+# Node.js dependencies
+node_modules/

@@ -1,0 +1,51 @@
+{
+  "name": "variety",
+  "version": "1.4.1",
+  "description": "Node.js wrapper for Variety - MongoDB Schema Analyser",
+  "main": "node-wrapper.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "variety": "./variety-cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/todvora/variety.git"
+  },
+  "keywords": [
+    "Variety",
+    "MongoDB",
+    "Schema"
+  ],
+  "author": "Tomas Dvorak <todvora@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/todvora/variety/issues"
+  },
+  "files": [
+    "variety.js",
+    "node-wrapper.js"
+  ],
+  "dependencies": {
+    "commander": "~2.7.1",
+    "hjson": "~1.6.3",
+    "q": "~1.2.0",
+    "request": "~2.55.0"
+  },
+  "devDependencies": {
+    "jasmine-node": ">=1.14.5",
+    "istanbul": ">=0.3.13",
+    "jshint": ">=2.6.3",
+    "coveralls": ">=2.11.2"
+  },
+  "scripts": {
+    "lint": "jshint variety-cli.js spec/**.js",
+    "pretest": "npm run lint",
+    "test": "istanbul cover jasmine-node -- spec --verbose --captureExceptions",
+    "coverage": "cat ./coverage/lcov.info | coveralls"
+  }
+}
