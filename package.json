@@ -1,20 +1,14 @@
 {
-  "name": "variety",
-  "version": "1.4.1",
+  "name": "variety-cli",
+  "version": "0.1.0",
   "description": "Node.js wrapper for Variety - MongoDB Schema Analyser",
-  "main": "node-wrapper.js",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "variety-cli.js",
   "bin": {
     "variety": "./variety-cli.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/todvora/variety.git"
+    "url": "https://github.com/todvora/variety-cli.git"
   },
   "keywords": [
     "Variety",
@@ -24,11 +18,11 @@
   "author": "Tomas Dvorak <todvora@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/todvora/variety/issues"
+    "url": "https://github.com/todvora/variety-cli/issues"
   },
   "files": [
-    "variety.js",
-    "node-wrapper.js"
+    "variety-cli.js",
+    "README.md"
   ],
   "dependencies": {
     "commander": "~2.7.1",
