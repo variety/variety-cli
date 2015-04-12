@@ -2,7 +2,7 @@
 
 Command line interface for the [Variety Schema Analyser](https://github.com/variety/variety).
 
-## Install
+## Install or update
 ```
 npm install variety-cli -g
 ```
@@ -16,7 +16,7 @@ variety database_name/collection_name
 Define your own query:
 
 ```
-variety --query='{"name": "Bob"}' test/users'
+variety --query='{"name": "Bob"}' test/users
 ```
 
 Print all available commands and options:

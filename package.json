@@ -28,7 +28,8 @@
     "commander": "~2.7.1",
     "hjson": "~1.6.3",
     "q": "~1.2.0",
-    "request": "~2.55.0"
+    "request": "~2.55.0",
+    "lodash": "^3.6.0"
   },
   "devDependencies": {
     "jasmine-node": ">=1.14.5",
@@ -37,7 +38,7 @@
     "coveralls": ">=2.11.2"
   },
   "scripts": {
-    "lint": "jshint variety-cli.js spec/**.js",
+    "lint": "jshint variety-cli.js spec/**.js lib/**.js",
     "pretest": "npm run lint",
     "test": "istanbul cover jasmine-node -- spec --verbose --captureExceptions",
     "coverage": "cat ./coverage/lcov.info | coveralls"
