@@ -2,6 +2,8 @@
 
 Command line interface for the [Variety Schema Analyser](https://github.com/variety/variety).
 
+[![Build Status](https://travis-ci.org/todvora/variety-cli.svg)](https://travis-ci.org/todvora/variety-cli)
+
 ## Install or update
 ```
 npm install variety-cli -g
