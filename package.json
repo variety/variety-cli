@@ -40,7 +40,7 @@
   "scripts": {
     "lint": "jshint variety-cli.js spec/**.js lib/**.js",
     "pretest": "npm run lint",
-    "test": "istanbul cover jasmine-node -- spec --verbose --captureExceptions",
+    "test": "istanbul cover -x **/spec/** jasmine-node -- spec --verbose --captureExceptions",
     "coverage": "cat ./coverage/lcov.info | coveralls"
   }
 }

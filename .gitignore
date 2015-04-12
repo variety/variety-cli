@@ -6,3 +6,6 @@ variety.js
 
 # Node.js dependencies
 node_modules/
+
+# coverage reports
+coverage/
