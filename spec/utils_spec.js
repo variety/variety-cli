@@ -1,4 +1,4 @@
-var cli = require("../lib/utils.js");
+var cli = require("../lib/utils");
 
 describe(__filename, function () {
 
