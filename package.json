@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Node.js wrapper for Variety - MongoDB Schema Analyser",
   "main": "variety-cli.js",
+  "homepage": "https://github.com/todvora/variety-cli",
   "bin": {
     "variety": "./variety-cli.js"
   },
