@@ -1,0 +1,14 @@
+
+Usage: variety [options] db_name/collection_name
+
+Options:
+
+{OPTIONS}
+
+Examples:
+
+  $ variety test/users --outputFormat='json'
+  $ variety logs/webserver --sort='{"created":-1}'
+  
+  For other usages see https://github.com/variety/variety
+  

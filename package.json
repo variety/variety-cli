@@ -30,7 +30,8 @@
     "hjson": "~1.6.3",
     "q": "~1.2.0",
     "request": "~2.55.0",
-    "lodash": "^3.6.0"
+    "lodash": "^3.6.0",
+    "child-process-promise": "~1.0.2"
   },
   "devDependencies": {
     "jasmine-node": ">=1.14.5",

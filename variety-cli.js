@@ -10,4 +10,4 @@ cli({
     exitFn: process.exit,
     argv:   process.argv,
     process: process
-});
+}).done(); // end the promise
