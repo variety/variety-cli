@@ -1,0 +1,11 @@
+# List of files / directories, that will not be part of the npm distribution.
+# Here should be named everything that isn't needed when running the module.
+
+# travis-ci config
+.travis.yml
+
+# tests sources folder
+spec/
+
+# gitignore file is not needed in distribution version
+.gitignore
