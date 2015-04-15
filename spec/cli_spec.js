@@ -23,7 +23,7 @@ describe(__filename, function () {
         process: null
     })
     .fin(function(){
-      expect(ws.content).toContain('Usage: variety [options] db_name/collection_name');
+      expect(ws.content).toContain('Usage: variety db_name/collection_name [options]');
       done();
     });
   });
