@@ -1,14 +1,19 @@
-
-Usage: variety [options] db_name/collection_name
+Usage: variety db_name/collection_name [options]
 
 Options:
 
 {OPTIONS}
 
+Mongo Shell options:
+
+  All the options available for the Mongo Shell can be also provided to the Variety.
+  For more details please type 'mongo --help' in your command line.
+
 Examples:
 
-  $ variety test/users --outputFormat='json'
+  $ variety test/users --outputFormat='json' --quiet
   $ variety logs/webserver --sort='{"created":-1}'
-  
+  $ variety test/users --query='{"bio":{"$exists":true}}'
+  $ node variety-cli.js test/users  --host localhost --port 27017
+
   For other usages see https://github.com/variety/variety
-  

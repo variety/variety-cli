@@ -16,7 +16,7 @@ describe(__filename, function () {
   });
 
   it('should correctly verify existing local library', function (done) {
-    utils.verifyLocalLibrary(__filename)
+    utils.fileExists(__filename)
     .fail(function(ex) {
       // this file should always exist, so fail intentionally in fail handler
       expect(true).toBe(false);
@@ -28,7 +28,7 @@ describe(__filename, function () {
   });
 
  it('should correctly fail when doesn\'t exist local library', function (done) {
-    utils.verifyLocalLibrary(__filename + "_nonsense")
+    utils.fileExists(__filename + "_nonsense")
     .then(function() {
       // this file should never exist, so fail intentionally in then handler
       expect(true).toBe(false);
