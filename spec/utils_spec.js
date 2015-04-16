@@ -1,4 +1,7 @@
 var utils = require("../lib/utils");
+var tmp = require('tmp');
+var fs = require('fs');
+var nock = require('nock');
 
 describe(__filename, function () {
 
@@ -27,7 +30,7 @@ describe(__filename, function () {
     });
   });
 
- it('should correctly fail when doesn\'t exist local library', function (done) {
+  it('should correctly fail when doesn\'t exist local library', function (done) {
     utils.fileExists(__filename + "_nonsense")
     .then(function() {
       // this file should never exist, so fail intentionally in then handler
@@ -39,4 +42,23 @@ describe(__filename, function () {
   });
 
 
+  it('should download and save some file from given url', function (done) {
+
+    var varietyUrl = 'https://raw.githubusercontent.com/variety/variety/master/variety.js';
+
+    nock('https://raw.githubusercontent.com')
+      .get('/variety/variety/master/variety.js')
+      .reply(200, 'dummy variety lib content');
+
+    var target = tmp.fileSync();
+
+    utils.download(varietyUrl, target.name)
+      .then(function(path) {
+        var buf = fs.readFileSync(path).toString();
+        target.removeCallback();
+        expect(buf).toEqual('dummy variety lib content');
+        done();
+      })
+      .done();
+  });
 });

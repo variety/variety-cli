@@ -52,7 +52,7 @@ describe(__filename, function () {
 
   it('should handle additional mongo shell arguments', function (done) {
     var parsed = program.parse(['node', 'variety-cli.js', 'test/users', '--quiet', '--host=localhost', '--port=28017']);
-    // TODO: why the simple toEqual does not work?!
+    // TODO: why doesn't work the simple toEqual?!
     expect(JSON.stringify(parsed.shellParams)).toEqual(JSON.stringify(['--quiet', '--host' , 'localhost', '--port', 28017]));
     done();
   });

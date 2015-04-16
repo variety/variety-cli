@@ -33,7 +33,9 @@
     "jasmine-node": ">=1.14.5",
     "istanbul": ">=0.3.13",
     "jshint": ">=2.6.3",
-    "coveralls": ">=2.11.2"
+    "coveralls": ">=2.11.2",
+    "tmp": ">=0.0.25",
+    "nock": "~1.6.0"
   },
   "scripts": {
     "lint": "jshint variety-cli.js spec/**.js lib/**.js",

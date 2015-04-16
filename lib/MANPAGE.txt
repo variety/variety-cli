@@ -12,7 +12,7 @@ Mongo Shell options:
 Examples:
 
   $ variety test/users --outputFormat='json' --quiet
-  $ variety logs/webserver --sort='{"created":-1}'
+  $ variety logs/webserver --sort='{"created":-1}' --limit=100
   $ variety test/users --query='{"bio":{"$exists":true}}'
   $ node variety-cli.js test/users  --host localhost --port 27017
 
