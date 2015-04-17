@@ -52,9 +52,12 @@ describe(__filename, function () {
 
     var target = tmp.fileSync();
 
+    console.log('tmp file is: ' + target.name);
+
     utils.download(varietyUrl, target.name)
       .then(function(path) {
-        var buf = fs.readFileSync(path).toString();
+        console.log('Reading lib from file: ' + path);
+        var buf = fs.readFileSync(path, {encoding: 'utf8'});
         target.removeCallback();
         expect(buf).toEqual('dummy variety lib content');
         done();
