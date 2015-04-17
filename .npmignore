@@ -1,8 +1,9 @@
 # List of files / directories, that will not be part of the npm distribution.
 # Here should be named everything that isn't needed when running the module.
 
-# travis-ci config
+# CI servers config
 .travis.yml
+appveyor.yml
 
 # tests sources folder
 spec/
