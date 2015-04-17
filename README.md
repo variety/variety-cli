@@ -4,6 +4,7 @@ Command line interface for the [Variety Schema Analyser](https://github.com/vari
 
 [![Build Status](https://travis-ci.org/todvora/variety-cli.svg)](https://travis-ci.org/todvora/variety-cli)
 [![Coverage Status](https://coveralls.io/repos/todvora/variety-cli/badge.svg)](https://coveralls.io/r/todvora/variety-cli)
+[![Build status](https://ci.appveyor.com/api/projects/status/3r6x00kf9sxpjeui?svg=true)](https://ci.appveyor.com/project/todvora/variety-cli)
 [![Dependencies Status](https://david-dm.org/todvora/variety-cli/status.svg)](https://david-dm.org/todvora/variety-cli/)
 [![DevDependencies Status](https://david-dm.org/todvora/variety-cli/dev-status.svg)](https://david-dm.org/todvora/variety-cli/#info=devDependencies)
 ## Install

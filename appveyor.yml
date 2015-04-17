@@ -11,4 +11,4 @@ build: off
 test_script:
   - node --version
   - npm --version
-  - npm test
+  - jasmine-node spec --verbose --captureExceptions
