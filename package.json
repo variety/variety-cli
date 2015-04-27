@@ -35,7 +35,7 @@
     "jshint": ">=2.6.3",
     "coveralls": ">=2.11.2",
     "tmp": ">=0.0.25",
-    "nock": "~1.6.0"
+    "nock": "~1.6.1"
   },
   "scripts": {
     "lint": "jshint variety-cli.js spec/**.js lib/**.js",
