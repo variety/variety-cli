@@ -2,11 +2,11 @@
 
 Command line interface for the [Variety Schema Analyser](https://github.com/variety/variety).
 
-[![Build Status](https://travis-ci.org/todvora/variety-cli.svg)](https://travis-ci.org/todvora/variety-cli)
-[![Coverage Status](https://coveralls.io/repos/todvora/variety-cli/badge.svg)](https://coveralls.io/r/todvora/variety-cli)
+[![Build Status](https://travis-ci.org/variety/variety-cli.svg)](https://travis-ci.org/variety/variety-cli)
+[![Coverage Status](https://coveralls.io/repos/variety/variety-cli/badge.svg)](https://coveralls.io/r/variety/variety-cli)
 [![Build status](https://ci.appveyor.com/api/projects/status/3r6x00kf9sxpjeui?svg=true)](https://ci.appveyor.com/project/todvora/variety-cli)
-[![Dependencies Status](https://david-dm.org/todvora/variety-cli/status.svg)](https://david-dm.org/todvora/variety-cli/)
-[![DevDependencies Status](https://david-dm.org/todvora/variety-cli/dev-status.svg)](https://david-dm.org/todvora/variety-cli/#info=devDependencies)
+[![Dependencies Status](https://david-dm.org/variety/variety-cli/status.svg)](https://david-dm.org/variety/variety-cli/)
+[![DevDependencies Status](https://david-dm.org/variety/variety-cli/dev-status.svg)](https://david-dm.org/variety/variety-cli/#info=devDependencies)
 ## Install
 
 You can install the *Variety-cli* globally in your system by calling:
@@ -113,4 +113,4 @@ Using collection of users
 
 ## License
 
-[The MIT License (MIT)](https://raw.github.com/todvora/variety-cli/master/LICENSE.md)
+[The MIT License (MIT)](https://raw.github.com/variety/variety-cli/master/LICENSE.md)
