@@ -14,6 +14,7 @@ Examples:
   $ variety test/users --outputFormat='json' --quiet
   $ variety logs/webserver --sort='{"created":-1}' --limit=100
   $ variety test/users --query='{"bio":{"$exists":true}}'
-  $ node variety-cli.js test/users  --host localhost --port 27017
+  $ variety test/users --host localhost --port 27017
+  $ variety test/users --plugins='/home/user/variety-plugin-csv.js'
 
   For other usages see https://github.com/variety/variety
