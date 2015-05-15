@@ -1,6 +1,6 @@
 {
   "name": "variety-cli",
-  "version": "0.3.3",
+  "version": "0.4.0",
   "description": "Node.js wrapper for Variety - MongoDB Schema Analyser",
   "main": "variety-cli.js",
   "homepage": "https://github.com/variety/variety-cli",
