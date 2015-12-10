@@ -19,6 +19,32 @@ of *variety-cli* directly from the [github repository of Variety](https://raw.gi
 
 If you want to upgrade *variety-cli* to newest version, type the same command as for the installation: ```npm install variety-cli -g```.
 
+### Docker
+
+You can also run **variety-cli** in Docker using a pre-built image in Docker Hub. In this case, you'll generally want to run Variety against an external MongoDB host with the `--host` flag. See the example below for more information.
+
+The **variety-cli** image is tagged in Docker Hub as [objectrocket/variety](https://hub.docker.com/r/objectrocket/variety/), which you can run as follows:
+
+```
+docker run objectrocket/variety test/foo --host db.example.com --quiet
+```
+
+Any arguments after the image name are passed to **variety-cli**, just as if you were running it directly from the command-line.
+
+#### Manually building the Docker image
+
+First, build the image with `docker build`:
+
+```
+docker build -t variety .
+```
+
+This will build a Docker image tagged locally as `variety`, which you can run with:
+
+```
+docker run variety test/foo --host db.example.com --quiet
+```
+
 ## Proxy setting
 
 If you are behind some proxy, you should configure proxy setting in your environment (to allow variety-cli download of the variety lib).
