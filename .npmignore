@@ -10,3 +10,5 @@ spec/
 
 # gitignore file is not needed in distribution version
 .gitignore
+
+Dockerfile
