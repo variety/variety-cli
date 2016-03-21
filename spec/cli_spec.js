@@ -17,10 +17,6 @@ var mockSpawn = function(bin, args) {
   return Q.resolve({'bin':bin, 'args':args});
 };
 
-var mockDownload = function(url, toFile) {
-  return Q.resolve(toFile);
-};
-
 describe(__filename, function () {
   beforeEach(function(){
     this.addMatchers({
@@ -53,7 +49,6 @@ describe(__filename, function () {
     var utils = require('../lib/utils');
 
     spyOn(child, 'spawn').andCallFake(mockSpawn);
-    spyOn(utils, 'download').andCallFake(mockDownload);
 
     var ws = getWritableStream();
     cli({
