@@ -1,12 +1,12 @@
-var program = require("../lib/program");
+var program = require('../lib/program');
 
 describe(__filename, function () {
   it('should return formated help', function (done) {
     var help = program.help();
-    expect(help).toContain("Options");
-    expect(help).toContain("Examples");
-    expect(help).toContain("--query");
-    expect(help).toContain("standard Mongo query object (json), to filter the set of documents required before analysis");
+    expect(help).toContain('Options');
+    expect(help).toContain('Examples');
+    expect(help).toContain('--query');
+    expect(help).toContain('standard Mongo query object (json), to filter the set of documents required before analysis');
     done();
   });
 

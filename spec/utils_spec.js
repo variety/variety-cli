@@ -1,7 +1,4 @@
-var utils = require("../lib/utils");
-var tmp = require('tmp');
-var fs = require('fs');
-var nock = require('nock');
+var utils = require('../lib/utils');
 
 describe(__filename, function () {
 
