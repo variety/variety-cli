@@ -14,8 +14,6 @@ You can install the *Variety-cli* globally in your system by calling:
 npm install variety-cli -g
 ```
 This will download the latest version from the [NPM repository](https://www.npmjs.com/package/variety-cli).
-Variety-cli itself does not include the variety.js library. The library will be downloaded on the first usage
-of *variety-cli* directly from the [github repository of Variety](https://raw.githubusercontent.com/variety/variety/master/variety.js).
 
 If you want to upgrade *variety-cli* to newest version, type the same command as for the installation: ```npm install variety-cli -g```.
 
@@ -44,26 +42,6 @@ This will build a Docker image tagged locally as `variety`, which you can run wi
 ```
 docker run variety test/foo --host db.example.com --quiet
 ```
-
-## Proxy setting
-
-If you are behind some proxy, you should configure proxy setting in your environment (to allow variety-cli download of the variety lib).
-
-### NPM proxy
-
-Run this command (and change the proxy url to your needs):
-```
-npm config set https-proxy http://10.203.0.1:5187/
-```
-
-### Node.js
-On the unix platforms this can be (temporary) achieved by calling:
- ```
-export https_proxy=http://10.203.0.1:5187/
-
-```
-If you want to configure proxy for other node.js apps in the persistent way, add the command
-to your ```.bashrc``` or ```.bashprofile```.
 
 ## Run variety
 
@@ -136,6 +114,27 @@ Using collection of users
 | someWeirdLegacyKey | String       |           1 |     20.0 |
 +------------------------------------------------------------+
 ```
+
+## Proxy setting
+
+If you are behind some proxy, you should configure proxy setting in your environment (to allow variety-cli download of the variety lib).
+
+### NPM proxy settings
+
+Run this command (and change the proxy url to your needs):
+```
+npm config set https-proxy http://10.203.0.1:5187/
+```
+
+### Node.js proxy settings
+On the unix platforms this can be (temporary) achieved by calling:
+ ```
+export https_proxy=http://10.203.0.1:5187/
+
+```
+If you want to configure proxy for other node.js apps in the persistent way, add the command
+to your ```.bashrc``` or ```.bashprofile```.
+
 
 ## License
 
