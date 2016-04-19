@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "child-process-promise": "^2.0.1",
+    "colors": "^1.1.2",
     "hjson": "^1.6.3",
     "lodash": "^4.6.1",
     "minimist": "^1.1.1",
