@@ -1,5 +1,4 @@
 var cli = require('../lib/cli');
-var Q = require('q');
 
 var getWritableStream = function() {
   var Writable = require('stream').Writable;
@@ -13,7 +12,10 @@ var getWritableStream = function() {
 };
 
 var mockSpawn = function(bin, args) {
-  return Q.resolve({'bin':bin, 'args':args});
+  var promise = Promise.resolve({'bin':bin, 'args':args});
+  // mock progress interface
+  promise.progress = function() {return this;};
+  return promise;
 };
 
 describe(__filename, function () {
@@ -35,11 +37,10 @@ describe(__filename, function () {
       argv:   ['node', 'variety-cli.js', '--help'],
       process: null
     })
-    .fin(function(){
+    .then(function(){
       expect(ws.content).toContain('Usage: variety db_name/collection_name [options]');
       done();
-    })
-    .done();
+    });
   });
 
   it('CLI should correctly execute Variety', function (done) {
@@ -65,6 +66,6 @@ describe(__filename, function () {
       expect(res.args[4]).toEqual('localhost'); //library path
       done();
     })
-    .done();
+    .catch(done);
   });
 });

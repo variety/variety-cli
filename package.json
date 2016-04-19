@@ -22,11 +22,10 @@
     "url": "https://github.com/variety/variety-cli/issues"
   },
   "dependencies": {
-    "minimist": "^1.1.1",
+    "child-process-promise": "^2.0.1",
     "hjson": "^1.6.3",
-    "q": "^1.3.0",
     "lodash": "^4.6.1",
-    "child-process-promise": "^1.0.2",
+    "minimist": "^1.1.1",
     "variety": "variety/variety"
   },
   "devDependencies": {
@@ -41,5 +40,8 @@
     "pretest": "npm run lint",
     "test": "istanbul cover -x **/spec/** jasmine-node -- spec --verbose --captureExceptions",
     "coverage": "cat ./coverage/lcov.info | coveralls"
+  },
+  "engines": {
+    "node": ">=4"
   }
 }
