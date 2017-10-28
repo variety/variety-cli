@@ -1,7 +1,7 @@
 language: node_js
 sudo: false
 node_js:
-  - "4"
-  - "5"
+  - "node"
+  - "lts/*"
 
 after_script: "npm run coverage"
