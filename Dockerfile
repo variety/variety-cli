@@ -1,10 +1,13 @@
-FROM debian:wheezy
+FROM debian/eol:wheezy
 MAINTAINER Dave Wittman <dave@objectrocket.com>
 
 ENV MONGODB_VERSION debian71-3.2.0
+ENV DEBIAN_FRONTEND noninteractive
 ENV PATH /opt/mongodb/bin:${PATH}
 
-RUN apt-get update && apt-get install -y curl && \
+RUN apt-get update && apt-get install -y --no-install-recommends apt-utils && \
+    apt-get install -y curl && \
+    apt-get install -y git && \
     curl -sL https://deb.nodesource.com/setup_5.x | bash - && \
     apt-get install -y nodejs && \
     mkdir -p /opt/mongodb && \
