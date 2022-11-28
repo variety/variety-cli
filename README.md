@@ -2,7 +2,6 @@
 
 Command line interface for the [Variety Schema Analyser](https://github.com/variety/variety).
 
-[![Build Status](https://travis-ci.org/variety/variety-cli.svg)](https://travis-ci.org/variety/variety-cli)
 [![Coverage Status](https://coveralls.io/repos/variety/variety-cli/badge.svg)](https://coveralls.io/r/variety/variety-cli)
 [![Build status](https://ci.appveyor.com/api/projects/status/3r6x00kf9sxpjeui?svg=true)](https://ci.appveyor.com/project/todvora/variety-cli)
 [![Dependencies Status](https://david-dm.org/variety/variety-cli/status.svg)](https://david-dm.org/variety/variety-cli/)
