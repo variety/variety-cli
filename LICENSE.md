@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2016 Tomas Dvorak
+Copyright © 2016–2023 Tomas Dvorak
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
